@@ -160,9 +160,9 @@
                                 <rect key="frame" x="34.666666666666657" y="122.66666666666666" width="345" height="490.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bWU-cc-nU6">
-                                        <rect key="frame" x="20" y="19.999999999999972" width="305" height="450.66666666666663"/>
+                                        <rect key="frame" x="20" y="19.999999999999972" width="304.99999999999989" height="450.66666666666663"/>
                                         <string key="text">WELCOME!
-In the ClimbingUp game you have to carefully build a tower of blocks to reach the maximum height.
+In the game game you have to carefully build a tower of blocks to reach the maximum height.
 After a certain number of blocks, your tower will automatically flattens out, but with each new segment you need more and more blocks and their speed increases, but you should remember about dangerous blocks that you should not put on your tower.
 You can also get new Australian animals that you can get by collecting coins.</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
