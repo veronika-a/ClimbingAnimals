@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9o4-nF-Qw4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9o4-nF-Qw4">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,7 +16,6 @@
             <objects>
                 <navigationController storyboardIdentifier="init" navigationBarHidden="YES" id="9o4-nF-Qw4" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GU4-Pz-cwb">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,22 +29,25 @@
         <!--Init View Controller-->
         <scene sceneID="v0Z-jC-Mx8">
             <objects>
-                <viewController storyboardIdentifier="InitVC" id="Hl5-kT-wZH" customClass="InitViewController" customModule="ClimbingBlock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InitVC" id="Hl5-kT-wZH" customClass="InitViewController" customModule="ClimbingUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ukn-em-m8t">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="8nI-SB-zIj">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST RESULT: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-f9-9gc">
-                                <rect key="frame" x="80" y="254" width="440" height="26"/>
+                                <rect key="frame" x="80" y="322" width="254" height="26"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMV-Dy-35D">
-                                <rect key="frame" x="80" y="452" width="440" height="132"/>
+                                <rect key="frame" x="80" y="464.33333333333331" width="254" height="75.999999999999943"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NMV-Dy-35D" secondAttribute="height" multiplier="10:3" id="rgW-OP-tIN"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="shopBtn"/>
                                 <connections>
@@ -51,8 +55,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AQ-1s-tMz">
-                                <rect key="frame" x="16" y="16" width="72" height="72"/>
+                                <rect key="frame" x="16" y="36" width="72" height="72"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="2AQ-1s-tMz" secondAttribute="height" multiplier="1:1" id="9gL-57-L5G"/>
                                     <constraint firstAttribute="width" constant="72" id="FQw-lw-Y6E"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -62,8 +67,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkA-Rk-lyl">
-                                <rect key="frame" x="512" y="16" width="72" height="72"/>
+                                <rect key="frame" x="326" y="36" width="72" height="72"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="nkA-Rk-lyl" secondAttribute="height" multiplier="1:1" id="JNS-6p-F76"/>
                                     <constraint firstAttribute="width" constant="72" id="oye-Vq-ayl"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -73,13 +79,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="YRg-bP-Luv">
-                                <rect key="frame" x="40" y="-46" width="520" height="260"/>
+                                <rect key="frame" x="40" y="115" width="334" height="167"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YRg-bP-Luv" secondAttribute="height" multiplier="2:1" id="x7p-ib-Oiu"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMN-MT-RcA">
-                                <rect key="frame" x="80" y="300" width="440" height="132"/>
+                                <rect key="frame" x="80" y="368" width="254" height="76.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rMN-MT-RcA" secondAttribute="height" multiplier="10:3" id="0yG-Ft-w93"/>
                                 </constraints>
@@ -90,7 +96,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1k-pW-0CG">
-                                <rect key="frame" x="80" y="604" width="440" height="132"/>
+                                <rect key="frame" x="80" y="560.33333333333337" width="254" height="76.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U1k-pW-0CG" secondAttribute="height" multiplier="10:3" id="sV3-qC-iYe"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="score"/>
                                 <connections>
@@ -103,9 +112,7 @@
                         <constraints>
                             <constraint firstItem="rMN-MT-RcA" firstAttribute="leading" secondItem="S1t-vd-F5X" secondAttribute="leading" constant="80" id="2Lr-RI-Tet"/>
                             <constraint firstItem="S1t-vd-F5X" firstAttribute="trailing" secondItem="YRg-bP-Luv" secondAttribute="trailing" constant="40" id="2bt-jj-ZsW"/>
-                            <constraint firstItem="2AQ-1s-tMz" firstAttribute="width" secondItem="2AQ-1s-tMz" secondAttribute="height" multiplier="1:1" id="9gL-57-L5G"/>
                             <constraint firstItem="2AQ-1s-tMz" firstAttribute="leading" secondItem="S1t-vd-F5X" secondAttribute="leading" constant="16" id="FqY-rD-Y1l"/>
-                            <constraint firstItem="nkA-Rk-lyl" firstAttribute="width" secondItem="nkA-Rk-lyl" secondAttribute="height" multiplier="1:1" id="JNS-6p-F76"/>
                             <constraint firstItem="8nI-SB-zIj" firstAttribute="top" secondItem="ukn-em-m8t" secondAttribute="top" id="KyG-EK-AU8"/>
                             <constraint firstItem="nkA-Rk-lyl" firstAttribute="top" secondItem="S1t-vd-F5X" secondAttribute="top" constant="16" id="LfL-8a-QZV"/>
                             <constraint firstAttribute="bottom" secondItem="8nI-SB-zIj" secondAttribute="bottom" id="Oeh-zC-dmV"/>
@@ -119,8 +126,6 @@
                             <constraint firstItem="U1k-pW-0CG" firstAttribute="leading" secondItem="rMN-MT-RcA" secondAttribute="leading" id="hX8-n3-ED3"/>
                             <constraint firstItem="YRg-bP-Luv" firstAttribute="leading" secondItem="S1t-vd-F5X" secondAttribute="leading" constant="40" id="kmN-jN-cMn"/>
                             <constraint firstItem="NMV-Dy-35D" firstAttribute="leading" secondItem="rMN-MT-RcA" secondAttribute="leading" id="pie-4n-GEd"/>
-                            <constraint firstItem="NMV-Dy-35D" firstAttribute="width" secondItem="NMV-Dy-35D" secondAttribute="height" multiplier="10:3" id="rgW-OP-tIN"/>
-                            <constraint firstItem="U1k-pW-0CG" firstAttribute="width" secondItem="U1k-pW-0CG" secondAttribute="height" multiplier="10:3" id="sV3-qC-iYe"/>
                             <constraint firstItem="S1t-vd-F5X" firstAttribute="trailing" secondItem="rMN-MT-RcA" secondAttribute="trailing" constant="80" id="szp-Eo-5xC"/>
                             <constraint firstItem="S1t-vd-F5X" firstAttribute="trailing" secondItem="nkA-Rk-lyl" secondAttribute="trailing" constant="16" id="tUm-xt-Jik"/>
                             <constraint firstAttribute="trailing" secondItem="8nI-SB-zIj" secondAttribute="trailing" id="ttk-lD-CkY"/>
@@ -143,19 +148,19 @@
         <!--Info View Controller-->
         <scene sceneID="f5K-nN-WYr">
             <objects>
-                <viewController storyboardIdentifier="info" id="ZlZ-ke-y8j" customClass="InfoViewController" customModule="ClimbingBlock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="info" id="ZlZ-ke-y8j" customClass="InfoViewController" customModule="ClimbingUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Bw-Ve-AFf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ch0-He-MLx">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtc-CR-VpF">
-                                <rect key="frame" x="50" y="100" width="500" height="400"/>
+                                <rect key="frame" x="34.666666666666657" y="122.66666666666666" width="345" height="490.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bWU-cc-nU6">
-                                        <rect key="frame" x="20" y="20" width="460" height="360"/>
+                                        <rect key="frame" x="20" y="19.999999999999972" width="305" height="450.66666666666663"/>
                                         <string key="text">WELCOME!
 In the ClimbingUp game you have to carefully build a tower of blocks to reach the maximum height.
 After a certain number of blocks, your tower will automatically flattens out, but with each new segment you need more and more blocks and their speed increases, but you should remember about dangerous blocks that you should not put on your tower.
@@ -173,7 +178,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fm-AQ-dvV">
-                                <rect key="frame" x="20" y="20" width="70" height="70"/>
+                                <rect key="frame" x="20" y="40" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="4NU-gI-RER"/>
                                     <constraint firstAttribute="height" constant="70" id="NLq-k3-bt5"/>
@@ -208,16 +213,16 @@ You can also get new Australian animals that you can get by collecting coins.</s
         <!--Finish View Controller-->
         <scene sceneID="YLT-zB-YKb">
             <objects>
-                <viewController storyboardIdentifier="finish" id="Pzm-6z-pDT" customClass="FinishViewController" customModule="ClimbingBlock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="finish" id="Pzm-6z-pDT" customClass="FinishViewController" customModule="ClimbingUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MnA-Vz-eHL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qk4-Lz-duO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E98-HL-I3C">
-                                <rect key="frame" x="20" y="20" width="72" height="72"/>
+                                <rect key="frame" x="20" y="40" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="VWU-VU-KNI"/>
                                     <constraint firstAttribute="width" secondItem="E98-HL-I3C" secondAttribute="height" multiplier="1:1" id="mRV-KN-aXP"/>
@@ -229,7 +234,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMO-Wl-76F">
-                                <rect key="frame" x="80" y="340" width="440" height="132"/>
+                                <rect key="frame" x="80" y="408" width="254" height="76.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="UMO-Wl-76F" secondAttribute="height" multiplier="10:3" id="X6e-6R-3Y2"/>
                                 </constraints>
@@ -240,7 +245,10 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-nt-r6P">
-                                <rect key="frame" x="80" y="492" width="440" height="132"/>
+                                <rect key="frame" x="80" y="504.33333333333326" width="254" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HTV-nt-r6P" secondAttribute="height" multiplier="10:3" id="F5R-C7-W26"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="home"/>
                                 <connections>
@@ -248,7 +256,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-ED-dvN">
-                                <rect key="frame" x="508" y="20" width="72" height="72"/>
+                                <rect key="frame" x="322" y="40" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="1Cb-Sp-6JD"/>
                                     <constraint firstAttribute="width" secondItem="MJl-ED-dvN" secondAttribute="height" multiplier="1:1" id="W1r-GC-U7f"/>
@@ -260,31 +268,31 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigBg" translatesAutoresizingMaskIntoConstraints="NO" id="zd2-p0-Sbv">
-                                <rect key="frame" x="40" y="-64" width="520" height="364"/>
+                                <rect key="frame" x="40" y="134.33333333333337" width="334" height="233.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zd2-p0-Sbv" secondAttribute="height" multiplier="10:7" id="7RO-1I-ime"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="RTJ-nP-6Zd">
-                                <rect key="frame" x="80" y="-44" width="440" height="110"/>
+                                <rect key="frame" x="80" y="154.33333333333334" width="254" height="63.333333333333343"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RTJ-nP-6Zd" secondAttribute="height" multiplier="20:5" id="7nv-rg-WUH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOo-xY-pyh">
-                                <rect key="frame" x="80" y="74" width="440" height="26"/>
+                                <rect key="frame" x="80" y="225.66666666666666" width="254" height="25.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEST RESULT: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1A-dt-AXO">
-                                <rect key="frame" x="80" y="108" width="440" height="20"/>
+                                <rect key="frame" x="80" y="259" width="254" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" name="yellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Msj-sH-lMM">
-                                <rect key="frame" x="272" y="144" width="57" height="30"/>
+                                <rect key="frame" x="178.66666666666666" y="294.33333333333331" width="57" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpk-xd-en9">
                                         <rect key="frame" x="0.0" y="0.0" width="23" height="30"/>
@@ -321,7 +329,6 @@ You can also get new Australian animals that you can get by collecting coins.</s
                             <constraint firstItem="qk4-Lz-duO" firstAttribute="trailing" secondItem="1BF-zR-Obh" secondAttribute="trailing" id="DfE-eu-MAW"/>
                             <constraint firstItem="UMO-Wl-76F" firstAttribute="trailing" secondItem="zd2-p0-Sbv" secondAttribute="trailing" constant="-40" id="DoN-wd-cFW"/>
                             <constraint firstItem="E98-HL-I3C" firstAttribute="leading" secondItem="1BF-zR-Obh" secondAttribute="leading" constant="20" id="EUF-6e-5kI"/>
-                            <constraint firstItem="HTV-nt-r6P" firstAttribute="width" secondItem="HTV-nt-r6P" secondAttribute="height" multiplier="10:3" id="F5R-C7-W26"/>
                             <constraint firstAttribute="trailing" secondItem="zd2-p0-Sbv" secondAttribute="trailing" constant="40" id="FK8-if-HNo"/>
                             <constraint firstItem="zd2-p0-Sbv" firstAttribute="centerX" secondItem="qk4-Lz-duO" secondAttribute="centerX" id="IEI-hI-OUF"/>
                             <constraint firstItem="HTV-nt-r6P" firstAttribute="leading" secondItem="UMO-Wl-76F" secondAttribute="leading" id="Ipb-oB-7U8"/>
@@ -363,20 +370,20 @@ You can also get new Australian animals that you can get by collecting coins.</s
         <!--Game View Controller-->
         <scene sceneID="tbf-d1-38h">
             <objects>
-                <viewController storyboardIdentifier="game" id="CX3-O7-rjP" customClass="GameViewController" customModule="ClimbingBlock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="game" id="CX3-O7-rjP" customClass="GameViewController" customModule="ClimbingUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="dCF-Qy-v9j" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgGame" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-pd-J9Z">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gf-xs-Py1" customClass="SKView">
-                                <rect key="frame" x="0.0" y="92" width="600" height="508"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="624"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pb3-bG-FaY">
-                                <rect key="frame" x="527" y="20" width="53" height="30"/>
+                                <rect key="frame" x="341" y="40" width="53" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-aX-Pcl">
                                         <rect key="frame" x="0.0" y="0.0" width="15" height="30"/>
@@ -394,7 +401,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEU-ki-lKY">
-                                <rect key="frame" x="20" y="20" width="72" height="72"/>
+                                <rect key="frame" x="20" y="40" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="3x1-Qr-1r6"/>
                                     <constraint firstAttribute="height" constant="72" id="yWz-s8-Wed"/>
@@ -435,16 +442,16 @@ You can also get new Australian animals that you can get by collecting coins.</s
         <!--Shop View Controller-->
         <scene sceneID="xmY-m2-qZA">
             <objects>
-                <viewController storyboardIdentifier="shop" id="L8e-k6-Vtd" customClass="ShopViewController" customModule="ClimbingBlock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shop" id="L8e-k6-Vtd" customClass="ShopViewController" customModule="ClimbingUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLS-5A-deY">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-O9-LMn">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Zft-7r-kPI">
-                                <rect key="frame" x="523" y="16" width="57" height="30"/>
+                                <rect key="frame" x="337" y="36" width="57" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08i-S1-41J">
                                         <rect key="frame" x="0.0" y="0.0" width="23" height="30"/>
@@ -467,13 +474,13 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop" translatesAutoresizingMaskIntoConstraints="NO" id="M8S-jg-VHA">
-                                <rect key="frame" x="80" y="108" width="440" height="147"/>
+                                <rect key="frame" x="80" y="128" width="254" height="84.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="M8S-jg-VHA" secondAttribute="height" multiplier="3:1" id="ADQ-CE-gbn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4D5-W8-rs7">
-                                <rect key="frame" x="16" y="16" width="72" height="72"/>
+                                <rect key="frame" x="16" y="36" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="Sex-l1-7Vk"/>
                                     <constraint firstAttribute="width" secondItem="4D5-W8-rs7" secondAttribute="height" id="eDH-zE-q9g"/>
@@ -485,7 +492,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-QY-6zG">
-                                <rect key="frame" x="32" y="275" width="536" height="309"/>
+                                <rect key="frame" x="32" y="232.66666666666666" width="350" height="487.33333333333337"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="32" minimumInteritemSpacing="8" id="CxI-do-0eM">
                                     <size key="itemSize" width="132" height="136"/>
@@ -494,7 +501,7 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                     <inset key="sectionInset" minX="0.0" minY="32" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="vAu-FC-ey7" customClass="ShopCell" customModule="ClimbingBlock" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopCell" id="vAu-FC-ey7" customClass="ShopCell" customModule="ClimbingUp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="32" width="132" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QwP-Ls-UWQ">
@@ -505,16 +512,16 @@ You can also get new Australian animals that you can get by collecting coins.</s
                                                     <rect key="frame" x="20" y="16" width="92" height="70"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="abC-ju-yXz">
-                                                    <rect key="frame" x="40" y="106" width="53" height="30"/>
+                                                    <rect key="frame" x="39.666666666666671" y="106" width="52.666666666666671" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVh-xF-36e">
-                                                            <rect key="frame" x="0.0" y="2" width="15" height="26"/>
+                                                            <rect key="frame" x="0.0" y="2.3333333333333286" width="14.666666666666666" height="25.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
                                                             <color key="textColor" systemColor="systemYellowColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1K-dW-kmg">
-                                                            <rect key="frame" x="23" y="0.0" width="30" height="30"/>
+                                                            <rect key="frame" x="22.666666666666671" y="0.0" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="A1K-dW-kmg" secondAttribute="height" multiplier="1:1" id="9hI-ph-3iN"/>
                                                                 <constraint firstAttribute="width" constant="30" id="Eqa-Rl-zqS"/>
